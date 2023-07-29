@@ -1,7 +1,10 @@
-// Create a function 
+let lap1 = 34
+let lap2 = 33
+let lap3 = 36
 
-function myLogger() {
-    console.log(42)
+function logLapTime() {
+    let totalTime = lap1 + lap2 + lap3
+    console.log(totalTime)
 }
 
-myLogger*()
+logLapTime()
