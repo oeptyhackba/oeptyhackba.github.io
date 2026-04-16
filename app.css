@@ -2,12 +2,111 @@ body {
     /* background: #ECE0C1; */
     background: #ECD67D;
     font-family: "Nunito", sans-serif;
+    color: #251C04;
+    line-height: 1.7;
     padding-top: 88px;
+}
+
+section {
+    padding: 80px 0;
 }
 
 .hero-section {
     padding: 100px 0 70px;
     background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(236,214,125,0.95));
+}
+
+.hero-section .hero-content {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.btn {
+    border-radius: 999px;
+}
+
+#mainNavbar .navbar-nav {
+    align-items: center;
+}
+
+#mainNavbar .navbar-nav .nav-item + .nav-item {
+    margin-left: 1rem;
+}
+
+#mainNavbar .nav-link {
+    color: #251C04;
+    font-weight: 600;
+}
+
+#mainNavbar .navbar-collapse {
+    background: transparent;
+}
+
+@media (max-width: 991px) {
+    #mainNavbar .navbar-nav {
+        background: rgba(236,214,125,0.95);
+        padding: 1rem 1rem 1.2rem;
+        border-radius: 16px;
+    }
+
+    #mainNavbar .navbar-nav .nav-item + .nav-item {
+        margin-left: 0;
+        margin-top: 0.75rem;
+    }
+
+    #mainNavbar .nav-link {
+        font-size: 1.1rem;
+        padding-left: 0;
+    }
+
+    #mainNavbar .btn-outline-light {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 70px 0 50px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-section .hero-text {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-section .hero-image {
+        max-width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .hero-section .btn-primary,
+    .btn-outline-dark,
+    .btn-primary {
+        width: 100%;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .content {
+        padding: 60px 0;
+    }
+
+    .feature-icon {
+        height: 180px;
+    }
+
+    .feature-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .footer {
+      padding: 50px 0;
+    }
 }
 
 .hero-section .eyebrow {
@@ -59,18 +158,17 @@ body {
 
 .blurb h2 {
    color: #EA1C2C;
-   font-weight: 100;
+   font-weight: 700;
    font-size: 2.5rem;
+   line-height: 1.1;
 }
 
-.blurb p {
+.blurb p,
+.lead {
     color: #251C04;
-    font-weight: 100;
-    font-size: 1.125rem;
-    line-height: 2;
-}
-.lead p {
-    color: #251C04;
+    font-weight: 300;
+    font-size: 1.15rem;
+    line-height: 1.85;
 }
 
 .content {
