@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* background: #ECE0C1; */
     background: #ECD67D;
@@ -5,6 +9,23 @@ body {
     color: #251C04;
     line-height: 1.7;
     padding-top: 88px;
+}
+
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #EA1C2C;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    z-index: 1050;
+    transform: translateY(-120%);
+    transition: transform 150ms ease;
+}
+
+.skip-link:focus,
+.skip-link:active {
+    transform: translateY(0);
 }
 
 section {
@@ -23,12 +44,26 @@ section {
 
 .btn {
     border-radius: 999px;
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+a {
+    transition: color 180ms ease, background-color 180ms ease;
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+    outline: 3px solid rgba(234,28,44,0.55);
+    outline-offset: 4px;
 }
 
 #mainNavbar .navbar-nav {
     align-items: center;
 }
-
 #mainNavbar .navbar-nav .nav-item + .nav-item {
     margin-left: 1rem;
 }
