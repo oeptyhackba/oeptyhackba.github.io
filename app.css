@@ -24,8 +24,17 @@ body {
 }
 
 .skip-link:focus,
-.skip-link:active {
+.skip-link:active,
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
     transform: translateY(0);
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
 }
 
 section {
@@ -177,20 +186,6 @@ a {
     max-width: 520px;
 }
 
-@media (max-width: 767px) {
-    .hero-section {
-        padding: 70px 0 50px;
-    }
-
-    .hero-section h1 {
-        font-size: 2.75rem;
-    }
-
-    .hero-section .hero-text {
-        margin-bottom: 1.5rem;
-    }
-}
-
 .blurb h2 {
    color: #EA1C2C;
    font-weight: 700;
@@ -275,15 +270,6 @@ a {
     font-size: 1.5rem;
 }
 
-#headingGroup span {
-    color: #EA1C2C;
-}
-
-#headingGroup h1 {
-    color:#251C04;
-    font-weight: 100;
-    font-size: 4rem;
-}
 
 .navbar.scrolled {
     background: rgb(217, 187, 109);
@@ -291,10 +277,6 @@ a {
 }
 
 @media (max-width: 1200px) {
-    #headingGroup h1 {
-        font-weight: 100;
-        font-size: 3rem;
-    }
     .blurb h2 {
         font-size: 2rem;
     }
